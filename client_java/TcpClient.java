@@ -21,17 +21,16 @@ public class TcpClient {
             System.out.println("[TCP Client] Connected. Send first message.\n");
 
             while (true) {
-                // --- PASUL 1: Clientul trimite mesaj ---
                 System.out.print("[You (Client)]: ");
                 String mesaj = scanner.nextLine();
-                out.println(mesaj);  // trimite cu newline (readline() pe server)
+                out.println(mesaj);
 
                 if (mesaj.trim().equalsIgnoreCase("exit")) {
                     System.out.println("[TCP Client] Sent 'exit'. Closing connection.");
                     break;
                 }
 
-                // --- PASUL 2: Clientul asteapta raspunsul serverului ---
+
                 String raspuns = in.readLine();
                 if (raspuns == null) {
                     System.out.println("[TCP Client] Server shut down connection.");
