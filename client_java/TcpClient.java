@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TcpClient {
 
-    private static final String SERVER_HOST = "";
+    private static final String SERVER_HOST = "100.88.190.81";
     private static final int SERVER_PORT = 5000;
 
     public static void main(String[] args) {
