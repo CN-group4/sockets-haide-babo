@@ -27,7 +27,7 @@ def main():
                 print("[TCP Server] Clientul a trimis 'exit'. Închid conexiunea.")
                 break
 
-            
+
             raspuns = input("[Tu (Server)]: ")
             conn.sendall((raspuns + "\n").encode('utf-8'))
 
